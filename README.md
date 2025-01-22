@@ -1,11 +1,11 @@
-# Project 4: Analysis of Job Dispatch Strategies in Server Farms
+Analysis of Job Dispatch Strategies in Server Farms
 
 ### Introduction
-This project explores the real-world problem of managing job queues in an efficient manner in server farms. This is critical for reducing the processing times in data centers. More information on this project can be found in the `Abstract` section of my Project Report.
+This project explores the real-world problem of managing job queues in an efficient manner in server farms. This is critical for reducing the processing times in data centers.
 
 ### How to Use
 
-Testing Queue and LinkedList from 03/12 Lab:
+Test Queue and LinkedList:
 ```
 % java QueueTests
 ```
@@ -29,7 +29,6 @@ Running the ServerFarmSimulation file steps:
 % java ServerFarmSimulation
 ```
 
-### NOTES ON REFLECTION QUESTION 2 FILE EDITS
 The following files should be updated to accommodate for the PreemptiveServer.java file instead of the previous Server.java file. All lines to be edited can be found in the comment at the top of the files.
 - JobDispatcher.java
 - LeastWorkDispatcher.java
@@ -37,10 +36,5 @@ The following files should be updated to accommodate for the PreemptiveServer.ja
 - RoundRobinDispatcher.java
 - ShortestQueueDispatcher.java
 
-To run Reflection Question 2:
-```
-% java ServerFarmSimulation
-```
-
-### NOTES ON EXTENSION 2
-To use extension 2, follow the same instructions as the "how to use" section of this README but instead, use "balanced" as the string in place for deciding on the dispatcher type. This dispatcher type is a hybrid of LeastWorkDispatcher and ShortestQueueDispatcher. It also has the lowest average wait time out of all dispatchers I've created.
+### NOTES ON BALANCED DISPATCHER TESTING
+Follow the same instructions as the "how to use" section of this README but instead, use "balanced" as the string in place for deciding on the dispatcher type. This dispatcher type is a hybrid of LeastWorkDispatcher and ShortestQueueDispatcher. It also has the lowest average wait time out of all dispatchers I've created.
